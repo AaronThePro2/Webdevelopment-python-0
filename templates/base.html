@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+        <title>{{ title }} </title>
+      {% else %}
+        <title>Aarons Bookshop</title>
+      {% endif %}
+    </head>
+    <body>
+      <div id="UI">Aarons Bookshop: <a href="/">Home </a><a href="/shop/">Shop </a><a href="/purchase/">Bestelpagina</a><a href="/login/"> Log in</a></div>
+      <hr>
+      {% block content %}{% endblock %}
+    </body>
+</html>

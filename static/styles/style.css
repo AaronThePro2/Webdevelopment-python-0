@@ -1,0 +1,35 @@
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#kop {
+    border: 2px black solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#UI {
+    border: 3px black solid;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    padding: 2px;
+}
+
+form {
+    display: table;
+}
+  
+div {
+    display: table-row;
+}
+  
+
+  
+  

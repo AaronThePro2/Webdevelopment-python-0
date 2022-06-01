@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    </head>
+    <body>
+        {% extends "base.html" %}
+
+        {% block content %}
+        <h1>Bedankt voor de bestelling! Het koste: {{tprice}} euro!</h1>
+        {% endblock %}
+    </body>
+</html>

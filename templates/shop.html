@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    </head>
+    <body>
+        {% extends "base.html" %}
+
+        {% block content %}
+        <h1>Books</h1>
+        <table>
+            <tr>
+                <td><img src="{{ url_for('static', filename='images/C#-Book_Jamie-Chan.jpg') }}" height="350" id="img1"></img></td>
+                <td><img src="{{ url_for('static', filename='images/Learn-Python-5ed.jpg') }}" height="350" id="img2"></img></td>
+                <td><img src="{{ url_for('static', filename='images/Lua-5.3.jpg') }}" height="350" id="img3"></img></td>
+                <td><img src="{{ url_for('static', filename='images/HTML-CSS.jpg') }}" height="350" id="img4"></img></td>
+                <td><img src="{{ url_for('static', filename='images/JS.jpg') }}" height="350" id="img5"></img></td>
+            </tr>
+            <tr class="center">
+                <td>Learn c# in one day and learn it well</td>
+                <td>Learn python 5ed.</td>
+                <td>Lua 5.3 reference manual</td>
+                <td>HTML&CSS design and build websites</td>
+                <td>Javascript for absolute beginners</td>   
+            </tr>
+            <tr class="center">
+                <td>{{price1}}</td>
+                <td>{{price2}}</td>
+                <td>{{price3}}</td>
+                <td>{{price4}}</td>
+                <td>{{price5}}</td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
+

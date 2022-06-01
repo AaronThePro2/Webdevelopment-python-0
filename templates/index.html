@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    </head>
+    <body>
+        {% extends "base.html" %}
+
+        {% block content %}
+        <h1>Aarons Bookshop</h1>
+        <article id="Kop">
+            <h2>Onze website verkoopt de leukste spullen!</h2>
+            <p>We verkopen elk type boek: Thrillers, Romans, Studie boeken en nog veel meer!</p>
+        </article>
+        {% endblock %}
+    </body>
+</html>

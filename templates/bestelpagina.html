@@ -1,0 +1,81 @@
+<!DOCTYPE = "html">
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    </head>
+    <body>
+        {% extends "base.html" %}
+        {% block content %}
+      <h1>Bestelpagina</h1>
+      <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+          {{ form.book1.label }}
+          {{price1}}
+          {{ form.book1(size=32) }}
+        </p>
+        <p>
+          {{ form.book2.label }}
+          {{price2}}
+          {{ form.book2(size=32) }}
+        </p>
+        <p>
+          {{ form.book3.label }}
+          {{price3}}
+          {{ form.book3(size=32) }}
+        </p>
+        <p>
+          {{ form.book4.label }}
+          {{price4}}
+          {{ form.book4(size=32) }}
+        </p>
+        <p>
+          {{ form.book5.label }}
+          {{price5}}
+          {{ form.book5(size=32) }}
+        </p>
+        <p>
+            {{ form.firstname.label }}
+            {{ form.firstname(size=32) }}
+        </p>
+        <p>
+          {{ form.lastname.label }}
+          {{ form.lastname(size=32) }}
+        </p>
+        <p>
+          {{ form.street.label }}
+          {{ form.street(size=32) }}
+        </p>
+        <p>
+          {{ form.housenumber.label }}
+          {{ form.housenumber(size=32) }}
+        </p>
+        <p>
+          {{ form.postcode.label }}
+          {{ form.postcode(size=32) }}
+        </p>
+        <p>
+          {{ form.livingarea.label }}
+          {{ form.livingarea(size=32) }}
+        </p>
+        <p>
+          {{ form.country.label }}
+          {{ form.country(size=32) }}
+        </p>
+        <p>
+          {{ form.phonenumber.label }}
+          {{ form.phonenumber(size=32) }}
+        </p>
+        <p>
+          {{ form.email.label }}
+          {{ form.email(size=32) }}
+        </p>
+        <p>
+          {{ form.delivery.label }}
+          {{ form.delivery(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+      </form>
+      {% endblock %}
+    </body>
+</html>
